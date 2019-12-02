@@ -2,32 +2,20 @@
 <html>
   
 <body>
-  
+    
+    <head>
+        <title>Daily Notes❤</title>
+    </head>
 
-       
-                <head>
-                <title>Daily Notes❤</title>
-                </head>
+        <p>Click "Try it". Wait 3 seconds, and the page will alert "Hello".</p>
 
-              
-              <script>
-                var text = ["Welcome", "Hi", "Sup dude"];
-                var counter = 0;
-                var elem = document.getElementById("changeText");
-                var inst = setInterval(change, 1000);
+            <button onclick="setTimeout(myFunction, 3000);">Try it</button>
                 
-                function change() {
-                  elem.innerHTML = text[counter];
-                  counter++;
-                  if (counter >= text.length) {
-                    counter = 0;
-                    
-                  }
+              <script>
+                function myFunction() {
+                  alert('Hello');
                 }
               </script>
-
-                <h1><centre>New Note Received!</centre></h1>
-                <p id="changeText"><centre>Welcome</p>
 
 
 
