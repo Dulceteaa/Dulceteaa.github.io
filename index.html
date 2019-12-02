@@ -19,13 +19,13 @@
 
     <h1 style="text-align:center;">Here is your daily note mi amor!</h1>
 
-   
-        <button style="background-color:white;margin:auto;display:block" onclick="setTimeout(myFunction, 1000);">Open</button>
+    <p id="title"></p>
+        <button style="background-color:white;margin:auto;display:block" onclick="myFunction()">Open</button>
    
 
     <script>
             function myFunction() {
-              alert(document.getElementById("title").innerHTML = titles[n-1]);
+              document.getElementById("title").innerHTML = titles[n-1];
             }
             var d = new Date();
             var n = d.getDay();
