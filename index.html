@@ -14,7 +14,7 @@
     
     <head>
         <title>Daily Notes❤</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
     </head>
 
     <h1 style="text-align:center;">Here is your daily note mi amor!</h1>
@@ -22,11 +22,18 @@
    
         <button style="background-color:white;margin:auto;display:block" onclick="setTimeout(myFunction, 1000);">Open</button>
    
+        <div id="title">
 
+        </div>
     <script>
             function myFunction() {
               alert('Hello');
             }
+            var d = new Date();
+            var n = d.getDay();
+            var titles = ['title 1', 'title 2', 'title 3', 'title 4', 'title 5', 'title 6', 'title 7'];
+
+            document.getElementById("title").innerHTML = titles[n-1]; 
     </script>
 
 
